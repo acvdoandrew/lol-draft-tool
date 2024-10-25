@@ -17,8 +17,8 @@ export const draftPhases: DraftPhase[] = [
     { team: 'Blue', action: 'Ban', index: 3 },
     { team: 'Red', action: 'Ban', index: 4 },
     { team: 'Blue', action: 'Ban', index: 4 },
-    { team: 'Red', action: 'Ban', index: 3 },
-    { team: 'Blue', action: 'Ban', index: 3 },
-    { team: 'Blue', action: 'Ban', index: 4 },
-    { team: 'Red', action: 'Ban', index: 4 },
+    { team: 'Red', action: 'Pick', index: 3 },
+    { team: 'Blue', action: 'Pick', index: 3 },
+    { team: 'Blue', action: 'Pick', index: 4 },
+    { team: 'Red', action: 'Pick', index: 4 },
 ];
