@@ -1,0 +1,132 @@
+.container {
+  width: 25%;
+  padding: 1.5rem;
+}
+
+.blueTeam {
+  background-color: #0a1428;
+}
+
+.redTeam {
+  background-color: #280a0a;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.teamTitleBlue {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0396e5;
+}
+
+.teamTitleRed {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #e51e3e;
+}
+
+.picksSection {
+  margin-bottom: 2rem;
+}
+
+.pickSlot {
+  height: 10rem;
+  border-radius: 0.25rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.pickSlotEmpty {
+  background-color: rgba(30, 35, 40, 0.5);
+}
+
+.pickSlotFilled {
+  background-color: rgb(30, 35, 40);
+}
+
+.pickSlotBlue {
+  border: 1px solid rgba(3, 150, 229, 0.3);
+}
+
+.pickSlotRed {
+  border: 1px solid rgba(229, 30, 62, 0.3);
+}
+
+.pickSlotActive {
+  border-color: #c8aa6e;
+  animation: pulse 2s infinite;
+}
+
+.pickContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.championIcon {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 2px solid #785a28;
+}
+
+.championName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #c8aa6e;
+}
+
+.emptySlotText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #785a28;
+}
+
+.bansSection {
+  margin-top: 1.5rem;
+}
+
+.bansTitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #c8aa6e;
+}
+
+.bansGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.banSlot {
+  aspect-ratio: 1;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,62 @@
+.container {
+  min-height: 100vh;
+  background-color: #010a13;
+  color: white;
+}
+
+.header {
+  background: linear-gradient(to bottom, #1e2328, #010a13);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #785a28;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #c8aa6e;
+  margin-bottom: 1rem;
+}
+
+.startButton {
+  background: linear-gradient(to bottom, #785a28, #463714);
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 600;
+  transition: all 300ms;
+  border: 1px solid #785a28;
+}
+
+.startButton:hover {
+  background: linear-gradient(to bottom, #c8aa6e, #785a28);
+}
+
+.phaseIndicator {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #c8aa6e;
+}
+
+.mainArea {
+  display: flex;
+  min-height: calc(100vh - 116px);
+}
+
+.resetButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: linear-gradient(to bottom, #8e3630, #4b1c18);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 600;
+  transition: all 300ms;
+  border: 1px solid #8e3630;
+}
+
+.resetButton:hover {
+  background: linear-gradient(to bottom, #c83c32, #8e3630);
+}

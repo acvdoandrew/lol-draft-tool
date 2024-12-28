@@ -1,0 +1,91 @@
+.container {
+  flex: 1;
+  background-color: #010a13;
+  padding: 1.5rem;
+  border-left: 1px solid #785a28;
+  border-right: 1px solid #785a28;
+}
+
+.searchContainer {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #1e2328;
+  color: #c8aa6e;
+  border: 1px solid #785a28;
+}
+
+.searchInput::placeholder {
+  color: #785a28;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #c8aa6e;
+}
+
+.championGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 240px);
+}
+
+@media (min-width: 768px) {
+  .championGrid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .championGrid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+.championButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+
+.championButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.championButton:not(:disabled):hover {
+  background-color: #1e2328;
+}
+
+.championImage {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #785a28;
+}
+
+.championButton:not(:disabled):hover .championImage {
+  border-color: #c8aa6e;
+}
+
+.championName {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #785a28;
+  transition: color 0.3s;
+}
+
+.championButton:not(:disabled):hover .championName {
+  color: #c8aa6e;
+}
