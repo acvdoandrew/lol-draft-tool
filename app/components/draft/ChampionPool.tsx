@@ -15,7 +15,7 @@ interface ChampionPoolProps {
   blueBans: string[];
   redBans: string[];
 }
-console.log("Hi testing SSH and LazyGit");
+
 export default function ChampionPool({
   isActive,
   currentPhase,
